@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+			function demo(){
+				var Username=document.getElementById("Username").value;	
+				var Usernamecheck=/^[a-zA-z ]+$/
+				var mobile=document.getElementById("mobile").value;
+				var mobilecheck=/^[0-9]{10}$/
+			
+				if (Username==""||Username.length<3	){
+					alert("Please Enter Your Valid UserName");
+					return false
+				}
+				if (!Username.match(Usernamecheck)){
+					alert("Username Should Consist Only Alphabets")
+					return false
+				}
+				if (mobile==""){
+					alert("Please Enter Your Valid mobile Number").value;
+					return false
+				}
+				if(mobile.match(mobilecheck)){
+					alert("mobile Number Should Consist Only Numbers")
+					return false
+				}
+				return true
+
+	            var Password=document.getElementById("Password").value
+				var date=document.getElementById("date").value
+				console.log(Username)
+				console.log(mobile)
+				console.log(Password)
+				console.log(date)
+				
+              }
+
+
+			
+		</script>
+</head>
+<body>
+	
+
+	<p><input id="Username" type="text" placeholder="Username"/></p>
+    <p><input id="Password" type="password" placeholder="Password"/></p>
+	<p><input id="date" type="Date"/></p>
+	<button onclick="demo()">submit</button>
+
+    
+		
+	
+
+</body>
+</html>

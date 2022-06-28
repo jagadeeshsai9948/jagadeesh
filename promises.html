@@ -1,0 +1,57 @@
+<!--promises
+
+fulfilled - (making an action which is promised earlier)
+
+rejected - (doesnt perform the action which promised earlier)
+
+pending - (having a 50 - 50 chances or time taking)
+
+resolved - which means a server related action is completed 
+
+ rejected - which means a server related action is rejected(that means the promise is not performed)-->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<script type="text/javascript">
+ 		/*const promiseobj=new Promise((resolve,reject)=>{
+ 			const time=Math.random();
+ 			console.log(time)
+ 			if (time<0.4)
+ 				resolve("it is working")
+ 			else
+ 				reject("not working")
+ 		})
+ 		console.log("value is",promiseobj)*/
+
+ 		fetch ("https://reqres.in/api/users?page=2")
+ 		.then((res)=>{
+ 			console.log(res)
+ 			return res.json()
+ 		})
+ 		.then((resjson)=>{
+ 			console.log(resjson.data)
+ 			display(resjson.data)
+ 		})
+ 		/*function display(users){
+ 			console.log("users information",users)
+ 			console.log(users[0].first_name)
+ 			console.log(users[0].email)
+ 			/*for(i=0;i<users.length;i++){
+ 				console.log(users[i].first_name)
+ 			    console.log(users[i].email)
+ 			}*/
+ 			users.map((usr)=>{
+ 				console.log(usr.first_name)
+ 				console.log(usr.email)
+ 			})
+ 	  	
+ 		
+ 	    
+ 	</script>
+ </head>
+ <body>
+ 
+ </body>
+ </html> 

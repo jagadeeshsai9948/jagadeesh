@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		function demo(){
+		var Username=document.getElementById("Username").value
+		var Password=document.getElementById("Password").value
+		var EmailAddress=document.getElementById("Email Address").value
+		var date=document.getElementById("Date").value
+		console.log(Username)
+		console.log(Password)
+		console.log(EmailAddress)
+		console.log(date)
+
+
+		if (Username==""||Username.length<8){
+			alert("Please Enter Your Valid Username And Username Should Not Consist Number Characters");
+           return false
+       }
+
+       
+	if (Password==""||Password.length<0){
+		 alert("Please Enter Your Valid Password ");
+		 return false
+	}
+	   
+	if (Password==""||Password.length<8){
+		 alert(" Password Should Consist Atleast 8 Characters ");
+		 return true
+	}
+		
+		if (EmailAddress==""|| EmailAddress.length<6){
+			alert("Please Enter Your Valid Email Address And The Address Should Consist @ symbol ").value
+			return true	
+		}
+		
+		
+		if (date==""||date<8){
+			alert("Please Enter Your Valid Date Of Birth")
+			return true
+		}
+		
+		}
+	</script>
+</head>
+<body>
+	
+	<p><input id="Username" type="text" placeholder="Username"/></p>
+	<p><input id="Password" type="Password" placeholder="Password"/></p>
+	<p><input id="Email Address" type="text" placeholder="Email Address"/></p>
+	<p><input id="Date" type="Date"/></p>
+	<button onclick="demo()" value="SUBMIT">Submit</button>
+	
+	
+
+</body>
+</html>
+
+<!--Condition for email is /^([a-zA-Z\._]+)@([a-z]+).([a-z]+){2,3}$/;

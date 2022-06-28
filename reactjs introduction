@@ -1,0 +1,11 @@
+DOM - DOCUMENT OBJECT MODEL
+XML - EXTENSIBLE MARKUP LANGUAGE
+the document object model is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure where in each model is an object representing a part of the document. the DOM represents a document with a logical tree
+
+REACTJS - is a javascript library which was introduced in 2008 by meta(facebook).in 2016 react hooks was introduced which made a dramastic change in front-end
+VIRTUAL DOM - is the key feature for Reactjs 
+
+cui - commandline user interface
+gui - graphical user interface
+cls - clearscreen
+npm - node package manager

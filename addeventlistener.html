@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<body>
+	<p>this example is for addeventlistener</p>
+
+
+
+    <p id="demo"></p>
+	<button id="mybtn">try it</button>
+
+
+	<script type="text/javascript">
+		const element= document.getElementById("mybtn");
+			element.addEventListener("mouseover",firstfunction);
+			element.addEventListener("clicked",secondfunction);
+			element.addEventListener("mouseout",thirdfunction);
+		
+		function firstfunction(){
+			document.getElementById("demo").innerHTML +="moused over!<br>"
+		}
+		function secondfunction(){
+			document.getElementById("demo").innerHTML +="clicked!<br>"
+		}
+		function thirdfunction(){
+			document.getElementById("demo").innerHTML +="moused out!<br>"
+		}
+	</script>
+
+</body>
+</html>

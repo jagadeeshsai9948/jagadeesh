@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style></style>
+
+</head>
+<body>
+	
+	<h1 id="one"> Lets Play The Game</h1>
+    <p id="Player1"></p>
+     <p id="Player2"></p>
+    <button onclick="RollDice()">Roll Dice</button>
+     <button onclick="EnterPlayerName()">Enter Player Names</button> 
+    <script type="text/javascript">
+    	
+		var player1 = prompt("Enter Player1 name");
+      var player2 = prompt("Enter player2 name");
+        document.getElementById("Player1").innerHTML = player1;
+         document.getElementById("Player2").innerHTML = player2;
+		function RollDice(){
+	     player1Dice = Math.floor(Math.random()* 6)  
+         player2Dice = Math.floor(Math.random()* 6)   
+            if (player1Dice === player2Dice) {
+                    document.getElementById("one").innerHTML= "Draw!";
+           	}
+            else if (player1Dice < player2Dice) {
+                document.getElementById("one").innerHTML= (player2 +"WINS!");
+           	}
+           	else {
+                document.getElementById("one").innerHTML= (player1 +"WINS!");
+            }
+       	}
+       	
+
+	</script>
+</body>
+</html>

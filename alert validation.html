@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function call(){
+			var Username=document.getElementById("Username").value
+			var Usernamecheck=/^[a-zA-z ]+$/
+			var Phonenumber=document.getElementById("Phonenumber").value
+			var Phonenumbercheck=/^[0-9]{10}$/
+
+		
+		if (Username==""||Username.length<3){
+			alert("Please Enter Your Valid Username")
+			return false
+		}
+		if (!Username.match(Usernamecheck)){
+			alert("Username Should Only Consist Alphabets")
+			return false
+		}
+		if (Phonenumber==""||Phonenumber.length<10){
+			alert("Please Enter Your 10 Digit Valid Phonenumber")
+			return false
+		}
+		if(!Phonenumber.match(Phonenumbercheck)){
+			alert("Phonenumber Should Only Consist Numbers")
+			return false
+		}
+		
+	      		
+
+		console.log(Username)
+		console.log(Phonenumber)
+	}
+
+	</script>
+</head>
+<body>
+	<p><input id="Username" type="text" placeholder="Username"/></p>
+	<p><input id="Phonenumber"type="text" placeholder="Phonenumber"/></p>
+	<button onclick="call()" value="Submit">Submit</button>
+
+</body>
+</html>
+
+<!--functions
+arrays
+object
+conditional statements
+for (loops)

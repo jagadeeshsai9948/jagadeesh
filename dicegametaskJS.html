@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 id="one">Lets Play The Game</h1>
+     <p id="player1">Player1</p>
+    <p id="player2">Player2</p>
+     <button onclick="Rolldice1()">Rolldice1</button>
+    <button onclick="Rolldice2()">Rolldice2</button>
+    <button onclick="EnterPlayerName1()">Enter Player Name1</button>
+    <button onclick="EnterPlayerName2()">Enter Player Name2</button>
+    
+</body>
+    <script>
+      
+        function Rolldice1(){
+        player1dice=Math.floor(Math.random()* 6)
+        player2dice=Math.floor(Math.random()* 6)
+          if (player1dice === player2dice){
+            document.getElementById("one").innerHTML= "Draw!";
+           }
+          else if(player1dice < player2dice){
+            document.getElementById("one").innerHTML=(player2 +"wins!");
+           }
+          else{
+            document.getElementById("one").innerHTML=(player1 +"wins!");
+           }
+       }
+        function Rolldice2(){
+        player1dice=Math.floor(Math.random()* 6)
+        player2dice=Math.floor(Math.random()* 6)
+          if (player1dice === player2dice){
+            document.getElementById("one").innerHTML= "Draw!";
+           }
+          else if(player1dice < player2dice){
+            document.getElementById("one").innerHTML=(player2 +"wins!");
+           }
+          else{
+            document.getElementById("one").innerHTML=(player1 +"wins!");
+           }
+       }
+
+
+      function EnterPlayerName1(){
+       var player1= prompt("Enter Player1 Name")
+       document.getElementById("player1").innerHTML=player1;
+    }
+      function EnterPlayerName2(){
+      var player2= prompt("Enter Player2 Name")
+      document.getElementById("player2").innerHTML=player2;
+    }
+
+
+  </script>
+    
+</html>
